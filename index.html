@@ -84,7 +84,7 @@
             <h2>Tech Stack</h2>
             <div class="logos">
                 <div class="logos-slide">
-                    <img src="./assets/logos/angular.png" alt="Angular" title="Angular" />
+                    <img src="./assets/logos/angular.svg" alt="Angular" title="Angular" />
                     <img src="./assets/logos/react.svg" alt="React" title="React" />
                     <img src="./assets/logos/typescript.svg" alt="TypeScript" title="TypeScript" />
                     <img src="./assets/logos/javascript.svg" alt="JavaScript" title="JavaScript" />
@@ -94,8 +94,8 @@
                     <img src="./assets/logos/nodejs.svg" alt="Node.js" title="Node.js" />
                     <img src="./assets/logos/golang.svg" alt="Go" title="Go" />
                     <img src="./assets/logos/express-js.svg" alt="Express.js" title="Express.js" />
-                    <img src="./assets/logos/mongodb.svg" alt="My SQL" title="My SQL" />
-                    <img src="./assets/logos/my-sql.png" alt="My SQL" title="My SQL" />
+                    <img src="./assets/logos/mongodb.svg" alt="MongoDB" title="MongoDB" />
+                    <img src="./assets/logos/my-sql.svg" alt="My SQL" title="My SQL" />
                     <img src="./assets/logos/aws.svg" alt="AWS" title="AWS" />
                     <img src="./assets/logos/docker.svg" alt="Docker" title="Docker" />
                     <img src="./assets/logos/jenkins.svg" alt="Jenkins" title="Jenkins" />
@@ -103,7 +103,7 @@
                 </div>
                 <!-- duplicate for seamless infinite scroll -->
                 <div class="logos-slide" style="margin-left: 3rem;">
-                    <img src="./assets/logos/angular.png" alt="Angular" title="Angular" />
+                    <img src="./assets/logos/angular.svg" alt="Angular" title="Angular" />
                     <img src="./assets/logos/react.svg" alt="React" title="React" />
                     <img src="./assets/logos/typescript.svg" alt="TypeScript" title="TypeScript" />
                     <img src="./assets/logos/javascript.svg" alt="JavaScript" title="JavaScript" />
@@ -113,8 +113,8 @@
                     <img src="./assets/logos/nodejs.svg" alt="Node.js" title="Node.js" />
                     <img src="./assets/logos/golang.svg" alt="Go" title="Go" />
                     <img src="./assets/logos/express-js.svg" alt="Express.js" title="Express.js" />
-                    <img src="./assets/logos/mongodb.svg" alt="My SQL" title="My SQL" />
-                    <img src="./assets/logos/my-sql.png" alt="My SQL" title="My SQL" />
+                    <img src="./assets/logos/mongodb.svg" alt="MongoDB" title="MongoDB" />
+                    <img src="./assets/logos/my-sql.svg" alt="My SQL" title="My SQL" />
                     <img src="./assets/logos/aws.svg" alt="AWS" title="AWS" />
                     <img src="./assets/logos/docker.svg" alt="Docker" title="Docker" />
                     <img src="./assets/logos/jenkins.svg" alt="Jenkins" title="Jenkins" />
@@ -124,47 +124,92 @@
         </section>
 
         <section class="about">
-            <p>I’m a passionate software engineer with 5+ years of experience designing and building full-stack web
-                applications using modern frameworks and cloud services.
-            </p>
-            <p>
-                I love crafting intuitive UIs, architecting robust backends, and automating deployments for speed and
-                reliability.
-            </p>
-            <p>
-                Currently working as a Senior Software Engineer at Mirafra Technologies (Samsung Semiconductor India
-                Research – Client), building large-scale dashboards integrating Jira and Bamboo pipelines to deliver
-                real-time project and test insights.
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Charan Teja Reddy Duthala</p>
-        <p>
-            <a href="mailto:duthalacharantejareddy@gmail.com">Email</a> |
-            <a href="https://www.linkedin.com/in/CharanTejaReddy" target="_blank">LinkedIn</a>
-        </p>
-    </footer>
-    <!-- <div style="position: relative;">
-        <div class="circle-text">
-            <p>FULL-STACK DEVELOPER BASED IN BENGALURU • </p>
-        </div>
-    </div> -->
-    <div style="width: 100px; ">
-        <svg viewBox="0 0 400 400" class="text-circle">
-            <defs>
-                <path id="circlePath" d="M200,200
+            <div
+                style="background-color: rgb(239, 237, 237); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; align-items: center; padding: 1rem;">
+                <div style="height: 18rem; width: 18rem; overflow: hidden; border-radius: 50%;">
+                    <img style="object-fit:cover ; height: 100%; width: 100%; "
+                        src="./assets/images/author-about.jpeg" />
+                </div>
+                <h2 style="margin-top: 2rem;">Duthala Charan Teja Reddy</h2>
+                <a style="margin-top: .5rem; font-size: 1.5rem; color: black; text-decoration: none;"
+                    href="mailto:charanduthala@gmail.com">charanduthala@gmail.com</a>
+                <button id="downloadCV"
+                    style="margin-top: 3rem; padding: 2rem; border-radius: 50rem; background-color: white; border: none; cursor: pointer; color: black;">Download
+                    cv</button>
+            </div>
+            <div
+                style="background-color: rgb(239, 237, 237); border-radius: 10px; display: flex; flex-direction: column; align-items: center; padding: 3rem; position: relative;">
+                <h1 style="align-self: self-start; font-size: 3rem;">About Me</h1>
+                <div style="display: flex; align-self: self-start; margin-top: 1rem; align-items: center; gap: .5rem;">
+                    <div style="height: 2.4rem; width: 2.4rem; ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" style="color: green;"
+                                d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+
+                    </div>
+                    <p style="color: green; font-size: 1.5rem; font-weight: 600;">Open to work</p>
+                </div>
+                <p style="margin-top: 2rem; font-size: 1.6rem; align-self: self-start;">I’m a passionate software
+                    engineer with 5+ years of
+                    experience designing
+                    and building full-stack web
+                    applications using modern frameworks and cloud services.
+                </p>
+                <p style="margin-top: 2rem; font-size: 1.6rem; align-self: self-start;">
+                    I love crafting intuitive UIs, architecting robust backends, and automating deployments for speed
+                    and
+                    reliability.
+                </p>
+                <p style="margin-top: 2rem; font-size: 1.6rem; align-self: self-start;">
+                    Currently working as a Senior Software Engineer at Mirafra Technologies (Samsung Semiconductor India
+                    Research – Client), building large-scale dashboards integrating Jira and Bamboo pipelines to deliver
+                    real-time project and test insights.
+                </p>
+                <p style="margin-top: 2rem; font-size: 1.6rem; align-self: self-start;">
+                    Currently working as a Senior Software Engineer at Mirafra Technologies (Samsung Semiconductor India
+                    Research – Client), building large-scale dashboards integrating Jira and Bamboo pipelines to deliver
+                    real-time project and test insights.
+                </p>
+                <div class="rotate"
+                    style="position: absolute; top: -4rem; right: -3.5rem; height: 10rem; width: 10rem;">
+                    <svg viewBox="0 0 400 400" class="text-circle" style="transform: scale(1);">
+                        <defs>
+                            <path id="circlePath" d="M200,200
            m-150,0
            a150,150 0 1,1 300,0
            a150,150 0 1,1 -300,0" />
-            </defs>
-            <text font-size="27" letter-spacing="5" font-weight="900">
-                <textPath href="#circlePath" startOffset="0%">
-                    FULL-STACK DEVELOPER ✦ BASED IN BENGALURU ✦
-                </textPath>
-            </text>
-        </svg>
-    </div>
+                        </defs>
+                        <text font-size="34" letter-spacing="1" font-weight="900">
+                            <textPath href="#circlePath" startOffset="0%">
+                                FULL-STACK DEVELOPER ✦ BASED IN BENGALURU ✦
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer style="background-color: black;" class="footer">
+        <div>
+            <div class="logo">
+                <p class="logo-initials">CD</p>
+            </div>
+            <div style="display: flex; margin-top: 2rem; gap: 1rem;">
+                <div>
+                    <img id="linkedIn" style="cursor: pointer;" src="./assets/icons/linkedin-logo.svg"
+                        alt="linkedin-logo" title="LinkedIn" />
+                </div>
+                <div>
+                    <img id="email" style="cursor: pointer;" src="./assets/icons/envelope-simple.svg" alt="email-logo"
+                        title="Email" />
+                </div>
+            </div>
+            <p id="copyright" style="color: white; margin-top: 3rem;">© 2026 Charan Teja Reddy Duthala</p>
+        </div>
+    </footer>
     <script src="./index.js"></script>
 </body>
 

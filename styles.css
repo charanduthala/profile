@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -148,37 +149,6 @@ html {
     text-shadow: 3px 3px 12px rgba(255, 255, 255, 0.4);
 }
 
-@media (max-width:900px) {
-    .author-about p {
-        font-size: 1.8rem;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .author-about p {
-        font-size: 1.8rem;
-    }
-
-    .author-about p:first-letter {
-        font-size: 3rem;
-    }
-
-    .author-container {
-        flex-direction: column;
-    }
-
-    .author-image {
-        height: 50rem;
-    }
-
-    author-about {
-        align-self: center;
-        flex: 0;
-    }
-}
-
-
 .menu-container {
     position: fixed;
     width: 20%;
@@ -213,13 +183,6 @@ html {
 .backdrop.active {
     opacity: 1;
     visibility: visible;
-}
-
-
-@media(max-width:600px) {
-    .menu-container {
-        width: 90%;
-    }
 }
 
 .skills-scroll {
@@ -278,7 +241,11 @@ html {
 
 
 .about {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .circle-text {
@@ -307,13 +274,76 @@ html {
     content: attr(data-text);
 }
 
+.footer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem;
+}
+
+.rotate {
+    animation: rotatefull 25s linear infinite;
+}
+
+.footer .logo {
+    border: 1px solid white;
+}
+
 /* Animation */
-@keyframes rotateText {
+@keyframes rotatefull {
     from {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:900px) {
+    .author-about p {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .author-about p {
+        font-size: 1.8rem;
+    }
+
+    .author-about p:first-letter {
+        font-size: 3rem;
+    }
+
+    .author-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .author-image {
+        height: 50rem;
+        width: 40rem;
+    }
+
+    .author-about {
+        align-self: center;
+        flex: 0;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .footer {
+        gap: 3rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:600px) {
+    .menu-container {
+        width: 90%;
     }
 }
